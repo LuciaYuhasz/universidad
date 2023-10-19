@@ -13,13 +13,14 @@ public class Universidad {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-       Alumno Juan=new Alumno(1,12323,"Luna"," Juan Pedro",LocalDate.of(1980,4,25),true);
+        Alumno Ian=new Alumno(12323,"Luna", "Juan Pedro",LocalDate.of(1980,4,25),false); 
+      // Alumno Juan=new Alumno(9,12323,"Luna", "Juan Pedro",LocalDate.of(1980,4,25),true);
        AlumnoData alu=new AlumnoData();
-     //  alu.guardarAlumno(Juan);
-     //alu.modificarAlumno(Juan);
+       alu.guardarAlumno(Ian);
+   // alu.modificarAlumno(Juan);
      
-     alu.eliminarAlumno(1);
+    // alu.eliminarAlumno(8);
+    
         }
         
     }

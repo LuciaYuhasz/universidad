@@ -22,7 +22,7 @@ public class AlumnoData {
     
   public void guardarAlumno(Alumno alumno){
       
-      String sql="INSERT INTO alumno(dni,apellido, nombre,fechaNacimiento,estado)"
+      String sql="INSERT INTO alumno(dni,apellido, nombre,fechaNac,estado)"
               +"values (?,?,?,?,?)";
       
       
@@ -55,7 +55,7 @@ public class AlumnoData {
   
   public void modificarAlumno(Alumno alumno){
       
-      String sql="UPDATE alumno SET dni=?, apellido=?, nombre=?, fechaNacimiento=?"
+      String sql="UPDATE alumno SET dni=?, apellido=?, nombre=?, fechaNac=?"
               +"WHERE idAlumno=?";
       
         try {
@@ -97,8 +97,6 @@ public class AlumnoData {
       
       
   }
-  
-  
   
   
 }
