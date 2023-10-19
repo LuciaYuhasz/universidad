@@ -18,6 +18,7 @@ public class Universidad {
      */
     public static void main(String[] args) {
         
+
       /* Alumno Juan=new Alumno(1,12323,"Luna"," Juan Pedro",LocalDate.of(1980,4,25),true);
        AlumnoData alu=new AlumnoData();
      //  alu.guardarAlumno(Juan);
@@ -86,5 +87,5 @@ public class Universidad {
            
     }   
 }
-       
+      
 
