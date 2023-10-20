@@ -83,7 +83,7 @@ public class Universidad {
 ////           ins.guardarInscripcion(inscp);
 ////          ins.modificarNota(6, 5, 4);
 //           ins.borrarInscripcion(2, 2);
-     
+////     
            AlumnoData ad= new AlumnoData();
            MateriaData md=new MateriaData();
            InscripcionData id= new InscripcionData();
@@ -91,8 +91,13 @@ public class Universidad {
            Alumno Mario=ad.buscarAlumno(8);
            Materia mate=md.buscarMateria(2);
            Inscripcion insc=new Inscripcion(8,Mario, mate);
-           
-           id.guardarInscripcion(insc);
+           //        id.guardarInscripcion(insc);
+
+            id.modificarNota(9,8,2);
+
+
+            //  id.borrarInscripcion(8,2);
+
     }   
     
 }
