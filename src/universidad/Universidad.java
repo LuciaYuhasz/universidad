@@ -73,19 +73,28 @@ public class Universidad {
          System.out.println("año : " + materiaEncontrada.getAnioMateria());*/
              
 // trabajamos con la clase inscripcion
-
-          AlumnoData alum = new AlumnoData();
-           MateriaData mat = new MateriaData();
-           InscripcionData ins = new InscripcionData();
-           Alumno Victoria = alum.buscarAlumno(2);
-           Materia lab = mat.buscarMateria(2);
-           Inscripcion inscp= new Inscripcion(9, Victoria , lab);
-//           ins.guardarInscripcion(inscp);
-//          ins.modificarNota(6, 5, 4);
-           ins.borrarInscripcion(2, 2);
+//
+//          AlumnoData alum = new AlumnoData();
+//           MateriaData mat = new MateriaData();
+//           InscripcionData ins = new InscripcionData();
+//           Alumno Victoria = alum.buscarAlumno(2);
+//           Materia lab = mat.buscarMateria(2);
+//           Inscripcion inscp= new Inscripcion(9, Victoria , lab);
+////           ins.guardarInscripcion(inscp);
+////          ins.modificarNota(6, 5, 4);
+//           ins.borrarInscripcion(2, 2);
      
+           AlumnoData ad= new AlumnoData();
+           MateriaData md=new MateriaData();
+           InscripcionData id= new InscripcionData();
            
+           Alumno Mario=ad.buscarAlumno(8);
+           Materia mate=md.buscarMateria(2);
+           Inscripcion insc=new Inscripcion(8,Mario, mate);
+           
+           id.guardarInscripcion(insc);
     }   
+    
 }
       
 

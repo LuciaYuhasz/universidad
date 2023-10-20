@@ -11,6 +11,9 @@ import universidad.entidades.Inscripcion;
 
 public class InscripcionData {
     
+    
+
+    
  private Connection con = null;
 
     public InscripcionData() {
