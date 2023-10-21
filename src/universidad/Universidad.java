@@ -99,6 +99,8 @@ public class Universidad {
             //  id.borrarInscripcion(8,2);
             
             
+ //               
+            
             for(Inscripcion inscripcion:id.obtenerInscripciones()){
                 System.out.println("id"+ inscripcion.getIdInscripcion());
                 System.out.println("Apellido"+ inscripcion.getAlumno().getApellido());
