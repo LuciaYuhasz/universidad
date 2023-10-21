@@ -87,16 +87,24 @@ public class Universidad {
            AlumnoData ad= new AlumnoData();
            MateriaData md=new MateriaData();
            InscripcionData id= new InscripcionData();
-           
+//           
            Alumno Mario=ad.buscarAlumno(8);
            Materia mate=md.buscarMateria(2);
            Inscripcion insc=new Inscripcion(8,Mario, mate);
            //        id.guardarInscripcion(insc);
 
-            id.modificarNota(9,8,2);
+          //  id.modificarNota(9,8,2);
 
 
             //  id.borrarInscripcion(8,2);
+            
+            
+            for(Inscripcion inscripcion:id.obtenerInscripciones()){
+                System.out.println("id"+ inscripcion.getIdInscripcion());
+                System.out.println("Apellido"+ inscripcion.getAlumno().getApellido());
+                System.out.println("Materia"+ inscripcion.getMateria().getNombre());
+                
+            }
 
     }   
     
