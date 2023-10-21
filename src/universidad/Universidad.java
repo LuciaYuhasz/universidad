@@ -87,7 +87,7 @@ public class Universidad {
            AlumnoData ad= new AlumnoData();
            MateriaData md=new MateriaData();
            InscripcionData id= new InscripcionData();
-//           
+           
            Alumno Mario=ad.buscarAlumno(8);
            Materia mate=md.buscarMateria(2);
            Inscripcion insc=new Inscripcion(8,Mario, mate);
@@ -98,12 +98,25 @@ public class Universidad {
 
             //  id.borrarInscripcion(8,2);
             
-  
-    for( Materia materia:id.obtenerMateriasNOCursadas(1)){
-        System.out.println("nombre "+ materia.getNombre());
-    }
-    }   
+            
+//            for(Inscripcion inscripcion:id.obtenerInscripciones()){
+//                System.out.println("id"+ inscripcion.getIdInscripcion());
+//                System.out.println("Apellido"+ inscripcion.getAlumno().getApellido());
+//                System.out.println("Materia"+ inscripcion.getMateria());
+//                
+//                
+//            }
+
+            
+//            for( Materia materia:id.obtenerMateriasNOCursadas(8)){
+//        System.out.println("nombre " + materia.getNombre());
+//        
+//    }   
     
-}
+            
+            for (Inscripcion cursadas:id.obtenerInscripciones(8)){
+                System.out.println("materias cursadas: " + cursadas.getMateria());
+            }
+    }}
       
 
