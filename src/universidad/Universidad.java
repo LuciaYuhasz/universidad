@@ -98,16 +98,10 @@ public class Universidad {
 
             //  id.borrarInscripcion(8,2);
             
-            
- //               
-            
-            for(Inscripcion inscripcion:id.obtenerInscripciones()){
-                System.out.println("id"+ inscripcion.getIdInscripcion());
-                System.out.println("Apellido"+ inscripcion.getAlumno().getApellido());
-                System.out.println("Materia"+ inscripcion.getMateria().getNombre());
-                
-            }
-
+  
+    for( Materia materia:id.obtenerMateriasNOCursadas(1)){
+        System.out.println("nombre "+ materia.getNombre());
+    }
     }   
     
 }
